@@ -5,7 +5,7 @@ const Hero = () => {
   const [imageIndex, setImageIndex] = useState(0);
   const [imageUrls] = useState([
     'https://www.novonordisk.co.in/content/dam/nncorp/language-masters/en/careers/images/job-ads/2020/Comms-and-Corpo-Affairs_General2.jpg',
-    'https://www.shutterstock.com/image-photo/digital-technology-big-data-internet-260nw-2140364053.jpg',
+    'https://th.bing.com/th/id/OIP.xnbiQnTYo_p0kTqp72ll-gHaDI?rs=1&pid=ImgDetMain',
   ]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Hero = () => {
     <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${imageUrls[imageIndex]})` }}>
       <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
         <div className="text-center text-white">
-          <h1 className="text-6xl font-bold">Creative Digital Agency</h1>
+          <h1 className="text-6xl font-bold">SkillUp Digital Creative Solutions</h1>
           <p className="mt-4 text-lg">We help you grow your brand in the digital world</p>
           <button className="mt-8 px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg">Get Started</button>
         </div>

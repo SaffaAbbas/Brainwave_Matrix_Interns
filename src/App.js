@@ -2,10 +2,11 @@
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
-import Testimonial from './components/Testimonial';
+import Testimonial from './components/ClientReview';
 import Team from './components/Team';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import ClientReview from './components/ClientReview';
 function App() {
   return (
     <div>
@@ -13,7 +14,7 @@ function App() {
       <Services />
       <About />
      <Team />
-     <Testimonial />
+     <ClientReview/>
       <Blog />
       <Footer /> 
     </div>

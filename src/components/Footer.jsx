@@ -31,9 +31,9 @@ const Footer = () => {
       <div className='max-sm:flex-col font-semibold flex flex-col justify-center items-start lg:items-center w-full lg:w-[20%] gap-1'>
         <ul className='max-sm:flex-col flex flex-col justify-center items-center gap-3'>
           <h1 className='max-sm:flex-col text-xl font-bold text-purple-500'>Contact Details</h1>
-          <li className='max-sm:flex-col max-md:flex-col text-gray-300 cursor-pointer hover:bg-red-600 hover:text-white'>safaabbas167@gamil
+          <li className='max-sm:flex-col max-md:flex-col text-gray-300 cursor-pointer hover:bg-red-600 hover:text-white'>skillupsupport@gamil
             .com</li>
-          <li className='max-md:flex-col text-gray-300 cursor-pointer hover:bg-red-600 hover:text-white'>+1 (92) 3120537411</li>
+          <li className='max-md:flex-col text-gray-300 cursor-pointer hover:bg-red-600 hover:text-white'>+1 (51) 519877636</li>
         </ul>
       </div>
     

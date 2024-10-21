@@ -2,21 +2,12 @@ import client1 from "../images/client1.png";
 import client2 from "../images/client2.png";
 import client3 from "../images/client3.png";
 import client4 from "../images/client4.png";
+import consult from "../images/consult.png";
+import digital from "../images/digital.png";
+import business from "../images/business.png";
+import aiGrowth from "../images/aiGrowth.png";
+import remoteWork from "../images/remoteWork.png"
 
-export const testimonials = [
-    {
-      name: "Client A",
-      feedback: "Great service! My website traffic has increased drastically.",
-      image: client1,
-      rating: 5
-    },
-    {
-      name: "Client B",
-      feedback: "The team was very professional and helped us get the results we wanted.",
-      image: client2,
-      rating: 4 
-    }
-  ];
 
   
 export const teamMembers = [
@@ -63,22 +54,61 @@ export const teamMembers = [
 ];
 
 export const blogPosts = [
+  {
+    title: '5 Tips for Growing Your Business',
+    description: 'Learn how to take your business to the next level with these key strategies.',
+    image: business,
+    date: 'October 10, 2024',
+  },
+  {
+    title: 'Achieve Major Milestone in Digital Marketing Matters',
+    description: 'Discover the importance of digital marketing in today’s competitive market.',
+    image: digital,
+    date: 'September 25, 2024',
+  },
+  {
+    title: 'Consulting Industry Adapts to Changing Business',
+    description: 'Explore how the consulting industry is evolving to meet new business challenges.',
+    image: consult,
+    date: 'September 12, 2024',
+  },
+  {
+    title: 'The Future of Remote Work and Challenges',
+    description: 'Examine the trends and technologies shaping the future of remote work.',
+    image: remoteWork,
+    date: 'October 5, 2024',
+  },
+  {
+    title: 'Harnessing AI for Business Growth',
+    description: 'Learn how artificial intelligence can enhance business operations and drive growth.',
+    image: aiGrowth, 
+    date: 'October 1, 2024',
+  },
+];
+
+export  const reviews = [
     {
-      title: '5 Tips for Growing Your Business',
-      description: 'Learn how to take your business to the next level with these key strategies.',
-      image: 'https://th.bing.com/th/id/OIF.YU8IDtDen0mFP2Keh5KyNA?rs=1&pid=ImgDetMain',
-      date: 'October 10, 2024',
+      name: 'Marvin McKinney',
+      title: 'Inspect Data',
+      image: client1, 
+      rating: 5,
     },
     {
-      title: ' Achieve major Milestone in Digital Marketing Matters',
-      description: 'Discover the importance of digital marketing in today’s competitive market.',
-      image: 'https://th.bing.com/th/id/OIF.YU8IDtDen0mFP2Keh5KyNA?rs=1&pid=ImgDetMain',
-      date: 'September 25, 2024',
+      name: 'Kristin Watson',
+      title: 'IOS Developer',
+      image: client2, 
+      rating: 5,
     },
     {
-      title: 'Consulting Industry adapts to changing Business',
-      description: 'Discover the importance of digital marketing in today’s competitive market.',
-      image: 'https://th.bing.com/th/id/OIF.YU8IDtDen0mFP2Keh5KyNA?rs=1&pid=ImgDetMain',
-      date: 'September 12, 2024'
+      name: 'Ralph Edwards',
+      title: 'Business intelligence',
+      image: client3,
+      rating: 5,
+    },
+    {
+      name: 'Kathryn Murphy',
+      title: 'Project management',
+      image: client4, 
+      rating: 5,
     },
   ];
