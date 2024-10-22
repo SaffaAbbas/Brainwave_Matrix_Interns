@@ -111,4 +111,16 @@ export  const reviews = [
       image: client4, 
       rating: 5,
     },
+    {
+      name: 'Ralph Edwards',
+      title: 'Business intelligence',
+      image: client3,
+      rating: 5,
+    },
+    {
+      name: 'Ralph Edwards',
+      title: 'Business intelligence',
+      image: client3,
+      rating: 5,
+    },
   ];

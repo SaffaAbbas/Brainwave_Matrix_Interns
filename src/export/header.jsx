@@ -16,7 +16,10 @@ const Header = () => {
           <a href="#services" className="text-white hover:text-gray-300">Services</a>
           <a href="#blog" className="text-white hover:text-gray-300">Blog</a>
         </nav>
-        <button className="ml-8 px-4 py-2 bg-purple-500 text-white rounded-md">Schedule Call</button>
+        <div className="flex space-x-2">
+        <button className="px-4 py-2 bg-purple-500 text-white rounded-md">Sign Up</button>
+        <button className="px-4 py-2 bg-purple-500 text-white rounded-md">Sign In</button>
+      </div>
       </div>
     </header>
 
