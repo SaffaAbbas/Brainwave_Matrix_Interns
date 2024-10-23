@@ -1,19 +1,10 @@
 import React, { useRef } from 'react';
 import { teamMembers } from '../export/data';
 import { FaChevronLeft, FaChevronRight, FaArrowRight } from 'react-icons/fa'; 
+import ScrollButton from '../export/ScrollButton';
 
 const Team = () => {
   const scrollRef = useRef(null); 
-
-  // Function to handle scrolling
-  const scroll = (direction) => {
-    const { current } = scrollRef;
-    if (direction === "left") {
-      current.scrollBy({ left: -300, behavior: "smooth" });
-    } else {
-      current.scrollBy({ left: 300, behavior: "smooth" });
-    }
-  };
 
   return (
     <section id="team" className="py-16 bg-gray-50">
@@ -39,20 +30,7 @@ const Team = () => {
           ))}
         </div>
 
-        {/* Scroll Buttons (Centered Below) */}
-        <div className="flex justify-center space-x-4 mt-6">
-          <button
-            onClick={() => scroll("left")}
-            className="p-2 bg-gray-500 rounded-full text-white hover:bg-purple-800 shadow-lg">
-            <FaChevronLeft />
-          </button>
-
-          <button
-            onClick={() => scroll("right")}
-            className="p-2 bg-gray-500 rounded-full text-white hover:bg-purple-800 shadow-lg">
-            <FaChevronRight />
-          </button>
-        </div>
+        <ScrollButton/>
       </div>
     </section>
   );

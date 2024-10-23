@@ -2,6 +2,8 @@ import client1 from "../images/client1.png";
 import client2 from "../images/client2.png";
 import client3 from "../images/client3.png";
 import client4 from "../images/client4.png";
+import client5 from "../images/client5.png";
+import client6 from "../images/client6.png";
 import consult from "../images/consult.png";
 import digital from "../images/digital.png";
 import business from "../images/business.png";
@@ -14,29 +16,35 @@ export const teamMembers = [
     {
       name: 'Alice Smith',
       role: 'Creative Director',
-      image: client1,
+      image: client6,
       color: "bg-blue-200"
     },
     {
       name: 'John Doe',
       role: 'Lead Developer',
-      image: client2,
+      image: client5,
       color: "bg-green-200"
     },
     {
       name: 'Sara Lee',
       role: 'Marketing Specialist',
-      image: client3,
+      image: client4,
       color: "bg-yellow-200"
     },
     {
       name: 'Michael Brown',
       role: 'UI/UX Designer',
-      image: client4,
+      image: client3,
       color: "bg-purple-200"
     },
     {
       name: 'Emma Wilson', // New client details
+      role: 'Data Analyst',
+      image: client2,
+      color: "bg-red-200"
+    },
+    {
+      name: 'Lisa Alay', // New client details
       role: 'Data Analyst',
       image: client1,
       color: "bg-red-200"
@@ -91,7 +99,7 @@ export  const reviews = [
       name: 'Marvin McKinney',
       title: 'Inspect Data',
       image: client1, 
-      rating: 5,
+      rating: 4,
     },
     {
       name: 'Kristin Watson',
@@ -103,7 +111,7 @@ export  const reviews = [
       name: 'Ralph Edwards',
       title: 'Business intelligence',
       image: client3,
-      rating: 5,
+      rating: 4,
     },
     {
       name: 'Kathryn Murphy',
@@ -112,15 +120,15 @@ export  const reviews = [
       rating: 5,
     },
     {
-      name: 'Ralph Edwards',
-      title: 'Business intelligence',
-      image: client3,
+      name: 'Sara Williams',
+      title: '  SEO Manager',
+      image: client6,
       rating: 5,
     },
     {
-      name: 'Ralph Edwards',
-      title: 'Business intelligence',
-      image: client3,
+      name: 'Ralph David',
+      title: 'Business Manager',
+      image: client5,
       rating: 5,
     },
   ];

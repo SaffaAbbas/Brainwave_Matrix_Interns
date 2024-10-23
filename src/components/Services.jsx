@@ -1,24 +1,24 @@
 import { FaChevronLeft, FaChevronRight, FaArrowRight } from 'react-icons/fa';
 import React, { useRef } from "react";
 import { services } from '../export/data';
+import ScrollButton from '../export/ScrollButton';
 
 const Services = () => {
   const scrollRef = useRef(null);
-
-  // Function to handle scrolling
   const scroll = (direction) => {
-    const { current } = scrollRef;
     if (direction === "left") {
-      current.scrollBy({ left: -300, behavior: "smooth" });
-    } else {
-      current.scrollBy({ left: 300, behavior: "smooth" });
+      // scroll left
+      console.log("Scrolling left");
+    } else if (direction === "right") {
+      // scroll right
+      console.log("Scrolling right");
     }
   };
 
   return (
     <section id="services" className="py-12 bg-gray-100">
       <div className="container mx-auto px-4 text-white">
-        <h2 className="text-4xl font-bold text-center text-purple-700">Our Services</h2>
+        <h2 className="text-4xl font-bold text-center text-black">Our Services</h2>
         
         {/* Services List */}
         <div 
@@ -27,7 +27,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="min-w-[250px] w-64 h-60 bg-purple-700 p-6 rounded-lg shadow-lg flex-shrink-0 relative transition duration-300 ease-in-out hover:bg-purple-900">
+              className="min-w-[250px] w-64 h-60 bg-gray-500 p-6 rounded-lg shadow-lg flex-shrink-0 relative transition duration-300 ease-in-out hover:bg-purple-900">
               <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
               <p>{service.description}</p>
               
@@ -40,18 +40,20 @@ const Services = () => {
 
         {/* Scroll Buttons (Centered Below) */}
         <div className="flex justify-center space-x-4 mt-6">
-          <button
-            onClick={() => scroll("left")}
-            className="p-2 bg-purple-700 rounded-full text-white hover:bg-purple-800 shadow-lg">
-            <FaChevronLeft />
-          </button>
+      <button
+        onClick={() => scroll("left")}
+        className="p-2 bg-gray-500 rounded-full text-white hover:bg-purple-800 shadow-lg"
+      >
+        <FaChevronLeft />
+      </button>
 
-          <button
-            onClick={() => scroll("right")}
-            className="p-2 bg-purple-700 rounded-full text-white hover:bg-purple-800 shadow-lg">
-            <FaChevronRight />
-          </button>
-        </div>
+      <button
+        onClick={() => scroll("right")}
+        className="p-2 bg-gray-500 rounded-full text-white hover:bg-purple-800 shadow-lg"
+      >
+        <FaChevronRight />
+      </button>
+    </div>
       </div>
     </section>
   );
