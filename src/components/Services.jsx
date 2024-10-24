@@ -5,15 +5,6 @@ import ScrollButton from '../export/ScrollButton';
 
 const Services = () => {
   const scrollRef = useRef(null);
-  const scroll = (direction) => {
-    if (direction === "left") {
-      // scroll left
-      console.log("Scrolling left");
-    } else if (direction === "right") {
-      // scroll right
-      console.log("Scrolling right");
-    }
-  };
 
   return (
     <section id="services" className="py-12 bg-gray-100">
@@ -39,21 +30,7 @@ const Services = () => {
         </div>
 
         {/* Scroll Buttons (Centered Below) */}
-        <div className="flex justify-center space-x-4 mt-6">
-      <button
-        onClick={() => scroll("left")}
-        className="p-2 bg-gray-500 rounded-full text-white hover:bg-purple-800 shadow-lg"
-      >
-        <FaChevronLeft />
-      </button>
-
-      <button
-        onClick={() => scroll("right")}
-        className="p-2 bg-gray-500 rounded-full text-white hover:bg-purple-800 shadow-lg"
-      >
-        <FaChevronRight />
-      </button>
-    </div>
+        <ScrollButton/>
       </div>
     </section>
   );
