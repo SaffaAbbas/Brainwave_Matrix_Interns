@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full p-4">
       <div className="flex justify-between items-center">
-        <img src={log} className="w-36 h-36  rounded-full" alt="Skillhub Logo" />
+        <img src={log} className="w-36 h-36  rounded-full"  loading="lazy" alt="Optimized" />
         <nav className="flex gap-6">
           <a href="/" className="text-white hover:text-gray-300">Home</a>
           <a href="#about" className="text-white hover:text-gray-300">About</a>

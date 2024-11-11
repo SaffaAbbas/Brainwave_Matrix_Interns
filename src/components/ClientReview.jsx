@@ -1,8 +1,10 @@
-import React from 'react';
-import { reviews } from '../export/data';
-import ScrollButton from '../export/ScrollButton';
+import React, { useRef } from 'react';
+import { reviews } from '../export/data'; // Ensure this is correctly exported in data.js
+import ScrollButton from '../export/ScrollButton'; // Ensure proper export in ScrollButton.js
 
 const ClientReview = () => {
+  const scrollRef = useRef(null); // Create a ref for the scrolling container
+
   const renderStars = (rating) => {
     return Array(rating)
       .fill(0)
@@ -28,13 +30,18 @@ const ClientReview = () => {
       <h2 className="text-3xl font-bold text-center mb-10">Client's Review</h2>
 
       {/* Review List */}
-      <div id="reviewList" className="flex overflow-x-auto scrollbar-hide space-x-8 mb-6">
+      <div
+        ref={scrollRef} // Attach the ref to the scrolling container
+        id="reviewList"
+        className="flex overflow-x-auto scrollbar-hide space-x-8 mb-6"
+      >
         {reviews.map((review, index) => (
           <div key={index} className="bg-gray-400 hover:bg-purple-800 shadow-md rounded-lg p-6 text-center w-64 flex-shrink-0">
             <img
               src={review.image}
               alt={review.name}
               className="w-28 h-28 rounded-full mx-auto mb-4"
+              loading="lazy"
             />
             <h3 className="font-bold text-lg mb-2">{review.name}</h3>
             <p className="text-white mb-4">{review.title}</p>
@@ -42,7 +49,9 @@ const ClientReview = () => {
           </div>
         ))}
       </div>
-      <ScrollButton/>
+
+      {/* Pass the scrollRef to the ScrollButton */}
+      <ScrollButton scrollRef={scrollRef} />
     </div>
   );
 };

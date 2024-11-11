@@ -25,7 +25,8 @@ const About = () => {
               </div>
             </div>
             <div className="w-full lg:w-1/2">
-              <img  src="https://trainingindustry.com/content/uploads/2021/07/8.10.21_Content_Dev_1182967367-1920x1080.jpg" alt="About us" className="w-90  w-90 rounded-lg shadow-lg " style={{marginLeft:40}} />
+
+              <img  loading="lazy" alt="Optimized" src="https://trainingindustry.com/content/uploads/2021/07/8.10.21_Content_Dev_1182967367-1920x1080.jpg"  className="w-90  w-90 rounded-lg shadow-lg " style={{marginLeft:40}} />
              
             </div>
           </div>
